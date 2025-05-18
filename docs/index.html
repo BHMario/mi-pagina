@@ -3,13 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personaliza tu líquido - Elysium Vape</title>
-  <link rel="stylesheet" href="Estilos/StylePersonalizarLiquidos.css" />
+  <title>Elysium Vape</title>
+  <link rel="stylesheet" href="Estilos/Style.css" />
 </head>
 <body>
+  <!-- VENTANAS EMERGENTES -->
+  <div id="modal-edad" class="modal">
+    <div class="contenido-modal">
+        <p class="Edad">¿Eres mayor de 18 años?</p>
+        <button onclick="confirmarEdad(true)">Soy mayor de 18 años</button>
+        <button onclick="confirmarEdad(false)">Salir</button>
+        </div>
+    </div>
+    <div id="popup-cookies" class="emergente">
+      <div class="contenido-modal">
+        <p class="Edad">Este sitio utiliza cookies. ¿Aceptas?</p>
+        <button onclick="aceptarCookies()">Aceptar</button>
+        <button onclick="aceptarCookies()">Rechazar</button>
+    </div>
+    </div>
+
+  <!-- ENCABEZADO -->
   <header>
     <div class="logo">
-        <a href="index.html"><img src="img/logo.png" alt="Elysium Vape" /></a>
+        <img src="img/logo.png" alt="Elysium Vape" />
         <span>Elysium Vape</span>
     </div>           
     <input type="text" class="barra-busqueda" placeholder="Buscar productos..." />
@@ -22,9 +39,9 @@
     </nav>
   </header>
 
+  <!-- MENÚ PRINCIPAL -->
   <nav class="menu-principal">
     <ul>
-      <li><a href="index.html">Inicio</a></li>
       <li><a href="liquidos.html">Líquidos</a></li>
       <li><a href="vapers.html">Vapers</a></li>
       <li><a href="personalizarLiquidos.html">Personalizar Sabores</a></li>
@@ -34,17 +51,29 @@
     </ul>
   </nav>
 
+  <!-- CONTENIDO PRINCIPAL -->
   <main>
-    <h2>Selecciona hasta 3 sabores</h2>
-    <div id="tabla-sabores" class="tabla-sabores">
-
-    </div>
-    <div class="acciones">
-      <button onclick="añadirAlCarrito()">Añadir al carrito</button>
-      <button onclick="reiniciarSeleccion()">Reiniciar selección</button>
-    </div>
+    <section>
+      <h2>Bienvenido a Elysium Vape</h2>
+      <p>Explora nuestros productos premium para vapeadores exigentes.</p>
+    </section>
+    <section class="galeria-productos">
+        <div class="producto">
+          <img src="img/vape1.png" alt="Vaper dorado premium">
+          <p>Vaper dorado premium - edición limitada</p>
+        </div>
+        <div class="producto">
+          <img src="img/liquido1.png" alt="Líquido de sabor vainilla y canela">
+          <p>Líquido gourmet - Vainilla & Canela</p>
+        </div>
+        <div class="producto">
+          <img src="img/vape2.png" alt="Vaper negro mate">
+          <p>Diseño negro mate - Elegancia y potencia</p>
+        </div>
+      </section>      
   </main>
 
+  <!-- PIE DE PÁGINA -->
   <footer>
     <form>
       <label for="boletin">Suscríbete a nuestro boletín:</label>
@@ -67,8 +96,8 @@
       <a href="login.html" class="btn">Iniciar sesión</a>
     </div>
   </div>
-</div> 
-  
-<script src="Funcionalidades/personalizarLiquidos.js"></script>
+</div>
+
+  <script src="Funcionalidades/Script.js"></script>
 </body>
 </html>

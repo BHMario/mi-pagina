@@ -121,6 +121,15 @@ footer {
     max-width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color : white;
+}
+
+a:hover{
+    color: #d4af37;
+}
+
 .emergente, .modal {
     position: fixed;
     top: 20%;
