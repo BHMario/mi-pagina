@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elysium Vape</title>
+  <link rel="stylesheet" href="Estilos/Style.css" />
+</head>
+<body>
+  <!-- VENTANAS EMERGENTES -->
+  <div id="modal-edad" class="modal">
+    <div class="contenido-modal">
+        <p class="Edad">¿Eres mayor de 18 años?</p>
+        <button onclick="confirmarEdad(true)">Soy mayor de 18 años</button>
+        <button onclick="confirmarEdad(false)">Salir</button>
+        </div>
+    </div>
+    <div id="popup-cookies" class="emergente">
+      <div class="contenido-modal">
+        <p class="Edad">Este sitio utiliza cookies. ¿Aceptas?</p>
+        <button onclick="aceptarCookies()">Aceptar</button>
+        <button onclick="aceptarCookies()">Rechazar</button>
+    </div>
+    </div>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Elysium Vape" />
+        <span>Elysium Vape</span>
+    </div>           
+    <input type="text" class="barra-busqueda" placeholder="Buscar productos..." />
+    <nav>
+      <button><img src="img/carrito.png" alt="carrito"></button>
+      <button onclick="verificarLogin()">
+        <img id="user-icon-img" src="img/usuario.png" alt="usuario">
+      </button>      
+      <button><img src="img/favorito.png" alt="favorito"></button>
+    </nav>
+  </header>
+
+  <!-- MENÚ PRINCIPAL -->
+  <nav class="menu-principal">
+    <ul>
+      <li><a href="liquidos.html">Líquidos</a></li>
+      <li><a href="vapers.html">Vapers</a></li>
+      <li><a href="personalizarLiquidos.html">Personalizar Sabores</a></li>
+      <li><a href="novedades.html">Novedades</a></li>
+      <li><a href="proximamente.html">Próximamente</a></li>
+      <li><a href="ofertas.html">Ofertas</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section>
+      <h2>Bienvenido a Elysium Vape</h2>
+      <p>Explora nuestros productos premium para vapeadores exigentes.</p>
+    </section>
+    <section class="galeria-productos">
+        <div class="producto">
+          <img src="img/vape1.png" alt="Vaper dorado premium">
+          <p>Vaper dorado premium - edición limitada</p>
+        </div>
+        <div class="producto">
+          <img src="img/liquido1.png" alt="Líquido de sabor vainilla y canela">
+          <p>Líquido gourmet - Vainilla & Canela</p>
+        </div>
+        <div class="producto">
+          <img src="img/vape2.png" alt="Vaper negro mate">
+          <p>Diseño negro mate - Elegancia y potencia</p>
+        </div>
+      </section>      
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <form>
+      <label for="boletin">Suscríbete a nuestro boletín:</label>
+      <input type="email" id="boletin" placeholder="Tu correo electrónico" />
+      <button type="submit">Suscribirse</button>
+    </form>
+    <div class="informacion">
+      <p>Sitemap | <a href="contacto.html">Contacto </a> | Redes Sociales | Política de privacidad</p>
+    </div>
+  </footer>
+
+<!-- Modal para inicio de sesión o registro -->
+<div id="login-modal" class="modal-login">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarModal()">&times;</span>
+    <h2>Inicia sesión para continuar</h2>
+    <p>Debes iniciar sesión o registrarte para acceder a esta función.</p>
+    <div class="modal-buttons">
+      <a href="registro.html" class="btn">Registrarse</a>
+      <a href="login.html" class="btn">Iniciar sesión</a>
+    </div>
+  </div>
+</div>
+
+  <script src="Funcionalidades/Script.js"></script>
+</body>
+</html>
